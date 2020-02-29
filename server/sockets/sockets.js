@@ -20,7 +20,7 @@ io.on('connection', (client) => {
 
         client.broadcast.emit('enviarMensaje', data);
 
-        if (mensaje.usuario) {
+        if (data.usuario) {
             callback({
                 resp: 'Todo salio OKKKK'
             });
@@ -29,7 +29,6 @@ io.on('connection', (client) => {
                 resp: 'Todo salio FAKYU'
             });
         };
-
 
     })
 
